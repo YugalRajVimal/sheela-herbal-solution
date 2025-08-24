@@ -26,7 +26,7 @@ const Contact = () => {
       return;
     }
 
-    const phoneNo = phone.replace(/\D/g, ""); // Remove non-numeric characters
+    const phoneNo = "+919389528675"; // Remove non-numeric characters
     const fullMessage = `Hello, my name is ${fullName}. I am from ${company}. You can reach me at ${email} or ${countryCode} ${phone}. Message: ${message}`;
     const whatsappUrl = `https://wa.me/${phoneNo}?text=${encodeURIComponent(
       fullMessage
