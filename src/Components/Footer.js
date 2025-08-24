@@ -2,14 +2,14 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-green-500 text-white py-12 px-6 md:px-16 relative">
+    <footer className="bg-black text-white py-12 px-6 md:px-16 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
         {/* Column 1: Top Products */}
         <div>
           <h3 className="text-xl font-bold mb-4">Top Products</h3>
           <ul className="space-y-2">
-          <li>Psoriasis Oil</li>
-          <li>Psoriasis Capsule</li>
+            <li>Psoriasis Oil</li>
+            <li>Psoriasis Capsule</li>
           </ul>
         </div>
 
@@ -120,6 +120,15 @@ const Footer = () => {
       <div className="border-t border-white/50 mt-10 pt-6 text-center">
         <p className="text-sm">
           Copyright © 2025. All right reserved. Sheela Herbal Solution
+        </p>
+        <p className="text-sm">
+          Powered by{" "}
+          <a
+            href="https://gowappily.com"
+            className="text-white hover:underline"
+          >
+            Gowappily Infotech
+          </a>
         </p>
       </div>
 

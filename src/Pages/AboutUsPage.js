@@ -34,7 +34,7 @@ const About = () => {
 
               <p className="text-gray-light font-roboto mb-4">
                 Our flagship products —{" "}
-                <span className="font-semibold">Psoriasis Oil</span>
+                <span className="font-semibold">Psoriasis Oil </span>
                 and <span className="font-semibold">Psoriasis Capsules</span> —
                 are trusted by people across India for their ability to soothe,
                 heal, and restore balance using the power of Ayurveda.
