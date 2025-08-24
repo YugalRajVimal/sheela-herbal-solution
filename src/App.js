@@ -2,9 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import LandingPage from "./Pages/LandingPage";
-
-const Home = () => <div>Home</div>;
-const About = () => <div>About</div>;
+import Contact from "./Pages/ContactUsPage";
+import About from "./Pages/AboutUsPage";
 
 const App = () => {
   return (
@@ -12,6 +11,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<LandingPage />} />
+          <Route path="contact-us" element={<Contact />} />
+          <Route path="about-us" element={<About />} />
         </Route>
       </Routes>
     </Router>

@@ -21,7 +21,7 @@ const LandingPage = () => {
         }}
         className="curve z-50 relative bg-right md:bg-center"
       >
-        <NavBar />
+        {/* <NavBar /> */}
         <HeroSection />
         <div className="custom-shape-divider-bottom-1756041555">
           <svg

@@ -8,11 +8,8 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">Top Products</h3>
           <ul className="space-y-2">
-            <li>Black Organic Tea</li>
-            <li>Loose Leaf Tea</li>
-            <li>Oolong Tea</li>
-            <li>Green Tea</li>
-            <li>Sencha Tea</li>
+          <li>Psoriasis Oil</li>
+          <li>Psoriasis Capsule</li>
           </ul>
         </div>
 
@@ -72,11 +69,16 @@ const Footer = () => {
                 +91 93895 28675
               </a>
             </li>
-            {/* <li>
+            <li>
               <span className="font-semibold">Email</span>
               <br />
-              <a href="mailto:contact@herbalstore.com" className="text-white hover:underline">contact@herbalstore.com</a>
-            </li> */}
+              <a
+                href="mailto:sumitkumar093089@gmail.com"
+                className="text-white hover:underline"
+              >
+                sumitkumar093089@gmail.com
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -89,7 +91,7 @@ const Footer = () => {
               alt="Herbal Store Logo"
               className="w-10 h-10"
             />
-            <span className="text-lg font-bold">HERBAL STORE</span>
+            <span className="text-lg font-bold">Sheela Herbal Solution</span>
           </div>
 
           {/* Newsletter */}
