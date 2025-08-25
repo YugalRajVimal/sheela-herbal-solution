@@ -67,10 +67,10 @@ const TopProducts = ({
               {/* Prices */}
               <div className="flex items-center gap-3">
                 <span className="text-gray-400 line-through text-sm">
-                  ${product.oldPrice}
+                  ₹{product.oldPrice}
                 </span>
                 <span className="text-[#82b440] font-semibold">
-                  ${product.newPrice}
+                  ₹{product.newPrice}
                 </span>
               </div>
             </Link>

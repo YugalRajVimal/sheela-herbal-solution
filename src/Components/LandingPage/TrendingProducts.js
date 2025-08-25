@@ -83,10 +83,10 @@ const TrendingProducts = ({
                 <StarRating rating={product.rating} />
                 <div className="flex justify-center items-center gap-3 mt-2">
                   <span className="line-through text-gray-500">
-                    ${product.oldPrice}
+                    ₹{product.oldPrice}
                   </span>
                   <span className="text-green-600 font-semibold">
-                    ${product.price}
+                    ₹{product.price}
                   </span>
                 </div>
               </Link>

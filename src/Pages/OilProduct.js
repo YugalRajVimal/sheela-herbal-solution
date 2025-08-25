@@ -24,6 +24,9 @@ const OilProduct = () => {
             <p className="text-1xl md:text-3xl text-left font-bold font-montserrat tracking-tight text-green-800">
               Enriched with Indian Jadibuti
             </p>
+            <p className="text-lg font-semibold text-green-800 mt-2">
+              Price: Rs.{599}
+            </p>
           </div>
           <div className="w-1/3 flex justify-end items-start">
             <Link
