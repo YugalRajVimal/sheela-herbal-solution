@@ -126,19 +126,19 @@ const CapsuleProduct = () => {
 
             {/* Trust Badges */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm">
+              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm text-center">
                 <Leaf className="text-green-600 w-8 h-8 mb-2" />
                 <p className="text-sm font-medium">100% Herbal</p>
               </div>
-              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm">
+              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm text-center">
                 <Droplets className="text-green-600 w-8 h-8 mb-2" />
                 <p className="text-sm font-medium">No Steroids</p>
               </div>
-              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm">
+              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm text-center">
                 <Shield className="text-green-600 w-8 h-8 mb-2" />
                 <p className="text-sm font-medium">Safe for Long-Term Use</p>
               </div>
-              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm">
+              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm text-center">
                 <CheckCircle className="text-green-600 w-8 h-8 mb-2" />
                 <p className="text-sm font-medium">Ayurveda Certified</p>
               </div>
