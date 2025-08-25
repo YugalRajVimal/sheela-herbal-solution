@@ -27,12 +27,12 @@ const Footer = ({ handleToggleOilCardOpen, handleToggleCapsuleCardOpen }) => {
               </a>
             </li>
             <li>
-              <a href="/about" className="text-white hover:underline">
+              <a href="/about-us" className="text-white hover:underline">
                 About Us
               </a>
             </li>
             <li>
-              <a href="/contact" className="text-white hover:underline">
+              <a href="/contact-us" className="text-white hover:underline">
                 Contact Us
               </a>
             </li>
