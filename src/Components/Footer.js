@@ -66,7 +66,7 @@ const Footer = () => {
                 href="tel:+919389528675"
                 className="text-white hover:underline"
               >
-                +91 93895 28675
+                +919389528675
               </a>
             </li>
             <li>
@@ -87,9 +87,9 @@ const Footer = () => {
           {/* Logo */}
           <div className="flex items-center gap-3">
             <img
-              src="https://img.icons8.com/ios-filled/50/ffffff/mortar-and-pestle.png"
+              src="/logo.svg"
               alt="Herbal Store Logo"
-              className="w-10 h-10"
+              className="w-12 h-12 bg-white rounded-full"
             />
             <span className="text-lg font-bold">Sheela Herbal Solution</span>
           </div>

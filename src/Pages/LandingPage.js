@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import HeroSection from "../Components/LandingPage/HeroSection";
 import NavBar from "../Components/NavBar";
 import KUTE from "kute.js";
@@ -9,8 +9,23 @@ import Achievements from "../Components/LandingPage/Achievements";
 import CustomerReview from "../Components/LandingPage/CustomerReview";
 import TrendingProducts from "../Components/LandingPage/TrendingProducts";
 import BlogSection from "../Components/LandingPage/BlogSection";
+import PsoriasisHerbalOilCard from "./PsoriasisHerbalOilCard";
+import PsoriasisHerbalCapsuleCard from "./PsoriasisHerbalCapsuleCard";
 
 const LandingPage = () => {
+  const [isOilCardOpen, setIsOilCarOpen] = useState(false);
+  const [isCapsuleCardOpen, setIsCapsuleCarOpen] = useState(false);
+
+  const handleToggleOilCardOpen = () => {
+    setIsOilCarOpen(!isOilCardOpen);
+    setIsCapsuleCarOpen(false);
+  };
+
+  const handleToggleCapsuleCardOpen = () => {
+    setIsCapsuleCarOpen(!isCapsuleCardOpen);
+    setIsOilCarOpen(false);
+  };
+
   return (
     <section className=" w-screen text-right">
       <div
@@ -40,11 +55,25 @@ const LandingPage = () => {
 
       <ProductsSection />
       <WhyAyurveda />
-      <TopProducts />
+      <TopProducts
+        handleToggleOilCardOpen={handleToggleOilCardOpen}
+        handleToggleCapsuleCardOpen={handleToggleCapsuleCardOpen}
+      />
       <Achievements />
       <CustomerReview />
-      <TrendingProducts />
+      <TrendingProducts
+        handleToggleOilCardOpen={handleToggleOilCardOpen}
+        handleToggleCapsuleCardOpen={handleToggleCapsuleCardOpen}
+      />
       <BlogSection />
+      <PsoriasisHerbalOilCard
+        isOilCardOpen={isOilCardOpen}
+        handleToggleOilCardOpen={handleToggleOilCardOpen}
+      />
+      <PsoriasisHerbalCapsuleCard
+        isCapsuleCardOpen={isCapsuleCardOpen}
+        handleToggleCapsuleCardOpen={handleToggleCapsuleCardOpen}
+      />
     </section>
   );
 };

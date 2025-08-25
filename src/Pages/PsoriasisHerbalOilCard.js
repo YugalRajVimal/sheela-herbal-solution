@@ -1,0 +1,183 @@
+import React from "react";
+import { CheckCircle, Leaf, Droplets, Shield } from "lucide-react";
+
+const PsoriasisHerbalOilCard = ({ handleToggleOilCardOpen, isOilCardOpen }) => {
+  if (!isOilCardOpen) return null; // Only display if isOilCardOpen is true
+
+  const sendWhatsAppMessage = () => {
+    const message = "I am interested in the Psoriasis Herbal Oil";
+    const phoneNumber = "+919389528675"; // Replace with the desired phone number
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank");
+  };
+
+  return (
+    <section className="h-screen w-screen fixed z-50 top-0 left-0 bg-black/70 py-20 px-4 md:px-12 lg:px-24 overflow-y-auto">
+      {/* Header */}
+      <div className="p-4 bg-white w-full rounded-md">
+        <div className="flex w-full">
+          <div className="w-2/3 ">
+            <h1 className="text-3xl md:text-5xl text-left font-bold font-montserrat tracking-tight text-green-800">
+              Psoriasis Herbal Oil 🌿
+            </h1>
+            <p className="text-1xl md:text-3xl text-left font-bold font-montserrat tracking-tight text-green-800">
+              Enriched with Indian Jadibuti
+            </p>
+          </div>
+          <div className="w-1/3 flex justify-end items-start">
+            <button
+              onClick={handleToggleOilCardOpen}
+              className="text-gray-600 hover:text-gray-800"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-8 w-8" // Increased size for thickness
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={3} // Increased stroke width for thickness
+                  d="M6 18L18 6M6 6l12 12"
+                  stroke="red" // Changed color to red
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div className="text-center mb-12">
+          <p className="text-gray-600 mt-4 max-w-3xl mx-auto font-roboto text-lg">
+            An Ayurvedic skin-soothing oil made with pure Indian herbs,
+            carefully blended to relieve psoriasis symptoms and restore natural
+            skin health.
+          </p>
+        </div>
+
+        <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
+          {/* Product Image */}
+          <div className="relative">
+            <img
+              src="/LandingPage/p1.jpg"
+              alt="Psoriasis Herbal Oil"
+              className="w-full h-auto rounded-2xl shadow-lg border"
+            />
+            <div className="absolute -bottom-6 -right-6 bg-green-700 text-white px-6 py-3 rounded-xl shadow-md">
+              100% Herbal • Chemical-Free
+            </div>
+          </div>
+
+          {/* Product Content */}
+          <div>
+            {/* Benefits */}
+            <h2 className="text-2xl md:text-3xl font-semibold font-montserrat mb-4 text-green-800">
+              ✨ Key Benefits
+            </h2>
+            <ul className="space-y-3 text-gray-700 mb-6">
+              {[
+                "Relieves itching & irritation",
+                "Reduces scaling & redness",
+                "Hydrates & softens dry, flaky skin",
+                "Supports natural skin repair & regeneration",
+                "100% Herbal, Natural & Chemical-Free",
+              ].map((benefit, i) => (
+                <li key={i} className="flex items-center gap-2">
+                  <CheckCircle className="text-green-600 w-5 h-5" />
+                  {benefit}
+                </li>
+              ))}
+            </ul>
+
+            {/* Ingredients */}
+            <h2 className="text-2xl md:text-3xl font-semibold font-montserrat mb-4 text-green-800">
+              🍃 Ingredients (Natural Jadibuti Blend)
+            </h2>
+            <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
+              <li>
+                <span className="font-semibold">
+                  Neem (Azadirachta indica):
+                </span>{" "}
+                Purifies skin, reduces inflammation & infection
+              </li>
+              <li>
+                <span className="font-semibold">
+                  Manjistha (Rubia cordifolia):
+                </span>{" "}
+                Improves skin texture, helps reduce redness
+              </li>
+              <li>
+                <span className="font-semibold">Tulsi (Holy Basil):</span>{" "}
+                Anti-bacterial, balances skin health
+              </li>
+              <li>
+                <span className="font-semibold">
+                  Karanj (Pongamia pinnata):
+                </span>{" "}
+                Traditional herb for skin disorders
+              </li>
+              <li>
+                <span className="font-semibold">Turmeric (Haldi):</span>{" "}
+                Anti-inflammatory & antioxidant properties
+              </li>
+              <li>
+                <span className="font-semibold">Coconut Oil & Sesame Oil:</span>{" "}
+                Deep moisturization & nourishment
+              </li>
+              <li>
+                <span className="font-semibold">Aloe Vera Extract:</span>{" "}
+                Soothes irritation & heals skin naturally
+              </li>
+            </ul>
+
+            {/* Usage */}
+            <h2 className="text-2xl md:text-3xl font-semibold font-montserrat mb-4 text-green-800">
+              🌱 How to Use
+            </h2>
+            <p className="text-gray-700 mb-6">
+              Apply a few drops on the affected area, gently massage, and leave
+              overnight for best results. Use regularly for visible improvement.
+            </p>
+
+            {/* Trust Badges */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm">
+                <Leaf className="text-green-600 w-8 h-8 mb-2" />
+                <p className="text-sm font-medium">100% Herbal</p>
+              </div>
+              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm">
+                <Droplets className="text-green-600 w-8 h-8 mb-2" />
+                <p className="text-sm font-medium">Chemical-Free</p>
+              </div>
+              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm">
+                <Shield className="text-green-600 w-8 h-8 mb-2" />
+                <p className="text-sm font-medium">Safe for Daily Use</p>
+              </div>
+              <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm">
+                <CheckCircle className="text-green-600 w-8 h-8 mb-2" />
+                <p className="text-sm font-medium">Ayurveda Certified</p>
+              </div>
+            </div>
+
+            {/* CTA */}
+            <div className="text-center md:text-left">
+              <button
+                onClick={sendWhatsAppMessage}
+                className="bg-green-700 hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition duration-200"
+              >
+                🛒 Buy Now – Heal Naturally
+              </button>
+              <p className="text-gray-500 text-sm mt-3">
+                ✨ 100% Herbal | No Steroids | No Chemicals | Safe for Daily Use
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PsoriasisHerbalOilCard;

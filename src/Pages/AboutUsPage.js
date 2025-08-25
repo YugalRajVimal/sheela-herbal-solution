@@ -59,9 +59,9 @@ const About = () => {
 
             <div className="relative aspect-square md:aspect-auto md:h-[600px]">
               <img
-                src=""
+                src="/logo.svg"
                 alt="Sheela Herbal Company"
-                className="w-full h-full object-cover rounded-lg shadow-text border"
+                className="w-full h-full object-cover rounded-lg shadow-text "
               />
 
               <div className="absolute text-white -bottom-20 md:-bottom-4 -right-4 w-36 h-36 md:w-56 md:h-56 bg-neutral-900 border border-danger/40 rounded-lg p-4 md:p-6 flex items-center justify-center">
@@ -89,11 +89,11 @@ const About = () => {
         <div className="absolute top-1/4 -left-32 w-64 h-64 rounded-full bg-danger/5 blur-3xl"></div>
         <div className="absolute bottom-1/4 -right-32 w-64 h-64 rounded-full bg-danger/5 blur-3xl"></div>
 
-        <div className="container mx-auto px-4 md:px-6 relative z-10">
-          <h2 className="text-3xl md:text-4xl font-bold font-montserrat mb-4 tracking-tight">
+        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
+          <h2 className="text-3xl md:text-4xl text-center font-bold font-montserrat mb-4 tracking-tight">
             Meet Our <span className="shadow-text">Founder</span>
           </h2>
-          <p className="text-gray-light font-roboto max-w-2xl mx-auto">
+          <p className="text-gray-light font-roboto max-w-2xl mx-auto mb-10">
             The visionary behind Sheela Herbal Company, dedicated to promoting
             natural healing through Ayurveda and creating effective remedies for
             skin wellness.
@@ -105,12 +105,12 @@ const About = () => {
               <div className="relative overflow-hidden h-full">
                 <div className="relative  overflow-hidden">
                   <img
-                    src=""
+                    src="/founder.jpeg"
                     alt=""
                     className=" h-1/2 aspect-[1/1] rounded-full object-cover transition-all duration-500"
                   />
 
-                  <div className="absolute inset-0 bg-black/90 backdrop-blur-sm flex flex-col justify-center items-center transition-all duration-300 p-8 opacity-0 md:group-hover:opacity-100">
+                  <div className="absolute inset-0 bg-white/70 backdrop-blur-sm flex flex-col justify-center items-center transition-all duration-300 p-8 opacity-0 md:group-hover:opacity-100">
                     <div className="max-w-xs">
                       <h3 className="text-black-theme-pure text-2xl font-bold font-montserrat mb-1">
                         Sumit Kumar

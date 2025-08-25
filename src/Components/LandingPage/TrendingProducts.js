@@ -4,25 +4,6 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-const products = [
-  {
-    id: 1,
-    name: "Psoriasis Oil",
-    image: "/LandingPage/b4.png", // Update with the correct image URL
-    rating: 4,
-    oldPrice: 150,
-    price: 140,
-  },
-  {
-    id: 2,
-    name: "Psoriasis Capsule",
-    image: "/LandingPage/b3.png", // Update with the correct image URL
-    rating: 4,
-    oldPrice: 100,
-    price: 90,
-  },
-];
-
 const StarRating = ({ rating }) => {
   return (
     <div className="flex justify-center mb-2">
@@ -40,7 +21,30 @@ const StarRating = ({ rating }) => {
   );
 };
 
-const TrendingProducts = () => {
+const TrendingProducts = ({
+  handleToggleOilCardOpen,
+  handleToggleCapsuleCardOpen,
+}) => {
+  const products = [
+    {
+      id: 1,
+      name: "Psoriasis Oil",
+      image: "/LandingPage/b4.png", // Update with the correct image URL
+      rating: 4,
+      oldPrice: 150,
+      price: 140,
+      funct: handleToggleOilCardOpen,
+    },
+    {
+      id: 2,
+      name: "Psoriasis Capsule",
+      image: "/LandingPage/b3.png", // Update with the correct image URL
+      rating: 4,
+      oldPrice: 100,
+      price: 90,
+      funct: handleToggleCapsuleCardOpen,
+    },
+  ];
   return (
     <section className="py-16 px-6 bg-white relative">
       <div className="max-w-7xl mx-auto text-center">
@@ -65,7 +69,10 @@ const TrendingProducts = () => {
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
-              <div className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition">
+              <div
+                onClick={product.funct}
+                className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
+              >
                 <img
                   src={product.image}
                   alt={product.name}

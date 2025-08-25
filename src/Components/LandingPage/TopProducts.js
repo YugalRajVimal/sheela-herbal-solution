@@ -1,24 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { Star } from "lucide-react";
 
-const products = [
-  {
-    name: "Psoriasis Oil",
-    image: "/LandingPage/b4.png", // Update with the correct image URL
-    rating: 4,
-    oldPrice: 150,
-    newPrice: 140,
-  },
-  {
-    name: "Psoriasis Capsule",
-    image: "/LandingPage/b3.png", // Update with the correct image URL
-    rating: 4,
-    oldPrice: 100,
-    newPrice: 90,
-  },
-];
-
-const TopProducts = () => {
+const TopProducts = ({
+  handleToggleOilCardOpen,
+  handleToggleCapsuleCardOpen,
+}) => {
+  const products = [
+    {
+      name: "Psoriasis Oil",
+      image: "/LandingPage/b4.png", // Update with the correct image URL
+      rating: 4,
+      oldPrice: 150,
+      newPrice: 140,
+      funct: handleToggleOilCardOpen,
+    },
+    {
+      name: "Psoriasis Capsule",
+      image: "/LandingPage/b3.png", // Update with the correct image URL
+      rating: 4,
+      oldPrice: 100,
+      newPrice: 90,
+      funct: handleToggleCapsuleCardOpen,
+    },
+  ];
   return (
     <section id="products" className="w-screen py-16 px-6 bg-white">
       <div className="max-w-7xl w-full mx-auto text-center">
@@ -31,6 +35,7 @@ const TopProducts = () => {
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
           {products.map((product, index) => (
             <div
+              onClick={product.funct}
               key={index}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center"
             >

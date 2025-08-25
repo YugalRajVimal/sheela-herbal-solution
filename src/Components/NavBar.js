@@ -9,13 +9,13 @@ const Navbar = () => {
   const closeMenu = () => setIsOpen(false); // Function to close the menu
 
   return (
-    <nav  className="nav w-full fixed top-0 left-0 z-50 bg-black/20 px-6 md:px-10 py-4 flex items-center justify-between">
+    <nav  className="nav w-full fixed top-0 left-0 z-50 bg-black/20 px-6 md:px-10 py-2 flex items-center justify-between">
       {/* Left: Logo */}
       <div className="flex items-center gap-3">
         <img
-          src="https://img.icons8.com/ios-filled/50/22c55e/mortar-and-pestle.png"
+          src="/logo.svg"
           alt="Herbal Store Logo"
-          className="w-10 h-10"
+          className="w-16 h-16 bg-white rounded-full"
         />
         <span className="text-lg font-bold text-black">
           Sheela Herbal Solution
