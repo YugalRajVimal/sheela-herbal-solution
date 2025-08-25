@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+const Footer = ({ handleToggleOilCardOpen, handleToggleCapsuleCardOpen }) => {
   return (
     <footer className="bg-black text-white py-12 px-6 md:px-16 relative">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
@@ -8,8 +8,12 @@ const Footer = () => {
         <div>
           <h3 className="text-xl font-bold mb-4">Top Products</h3>
           <ul className="space-y-2">
-            <li>Psoriasis Oil</li>
-            <li>Psoriasis Capsule</li>
+            <li>
+              <a href="/products/psoriasis-oil" className="text-white hover:underline">Psoriasis Oil</a>
+            </li>
+            <li>
+              <a href="/products/psoriasis-capsule" className="text-white hover:underline">Psoriasis Capsule</a>
+            </li>
           </ul>
         </div>
 
