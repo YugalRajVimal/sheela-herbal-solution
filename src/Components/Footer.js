@@ -32,21 +32,6 @@ const Footer = () => {
                 Contact Us
               </a>
             </li>
-            <li>
-              <a href="#products" className="text-white hover:underline">
-                Products
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="text-white hover:underline">
-                Testimonials
-              </a>
-            </li>
-            <li>
-              <a href="#blogs" className="text-white hover:underline">
-                Blogs
-              </a>
-            </li>
           </ul>
         </div>
 
