@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle, Leaf, Droplets, Shield } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const OilProduct = () => {
   const sendWhatsAppMessage = () => {
@@ -25,8 +26,8 @@ const OilProduct = () => {
             </p>
           </div>
           <div className="w-1/3 flex justify-end items-start">
-            <a
-              href="/"
+            <Link
+              to="/"
               className="text-gray-600 hover:text-gray-800 cursor-pointer"
             >
               <svg
@@ -44,7 +45,7 @@ const OilProduct = () => {
                   stroke="red" // Changed color to red
                 />
               </svg>
-            </a>
+            </Link>
           </div>
         </div>
         <div className="text-center mb-12">

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = ({ handleToggleOilCardOpen, handleToggleCapsuleCardOpen }) => {
   return (
@@ -9,10 +10,20 @@ const Footer = ({ handleToggleOilCardOpen, handleToggleCapsuleCardOpen }) => {
           <h3 className="text-xl font-bold mb-4">Top Products</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/products/psoriasis-oil" className="text-white hover:underline">Psoriasis Oil</a>
+              <Link
+                to="/products/psoriasis-oil"
+                className="text-white hover:underline"
+              >
+                Psoriasis Oil
+              </Link>
             </li>
             <li>
-              <a href="/products/psoriasis-capsule" className="text-white hover:underline">Psoriasis Capsule</a>
+              <Link
+                to="/products/psoriasis-capsule"
+                className="text-white hover:underline"
+              >
+                Psoriasis Capsule
+              </Link>
             </li>
           </ul>
         </div>
@@ -22,19 +33,19 @@ const Footer = ({ handleToggleOilCardOpen, handleToggleCapsuleCardOpen }) => {
           <h3 className="text-xl font-bold mb-4">Legal Information</h3>
           <ul className="space-y-2">
             <li>
-              <a href="/" className="text-white hover:underline">
+              <Link to="/" className="text-white hover:underline">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/about-us" className="text-white hover:underline">
+              <Link to="/about-us" className="text-white hover:underline">
                 About Us
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact-us" className="text-white hover:underline">
+              <Link to="/contact-us" className="text-white hover:underline">
                 Contact Us
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const TopProducts = ({
   handleToggleOilCardOpen,
@@ -34,8 +35,8 @@ const TopProducts = ({
         {/* Products Grid */}
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
           {products.map((product, index) => (
-            <a
-              href={product.funct}
+            <Link
+              to={product.funct}
               key={index}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center"
             >
@@ -72,7 +73,7 @@ const TopProducts = ({
                   ${product.newPrice}
                 </span>
               </div>
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { Link } from "react-router-dom";
 
 const StarRating = ({ rating }) => {
   return (
@@ -69,8 +70,8 @@ const TrendingProducts = ({
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
-              <a
-                href={product.funct}
+              <Link
+                to={product.funct}
                 className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
               >
                 <img
@@ -88,7 +89,7 @@ const TrendingProducts = ({
                     ${product.price}
                   </span>
                 </div>
-              </a>
+              </Link>
             </SwiperSlide>
           ))}
         </Swiper>
