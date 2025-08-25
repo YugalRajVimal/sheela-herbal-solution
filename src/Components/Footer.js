@@ -125,6 +125,8 @@ const Footer = () => {
           Powered by{" "}
           <a
             href="https://gowappily.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-white hover:underline"
           >
             Gowappily Infotech
