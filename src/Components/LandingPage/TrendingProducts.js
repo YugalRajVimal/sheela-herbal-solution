@@ -32,8 +32,8 @@ const TrendingProducts = ({
       name: "Psoriasis Oil",
       image: "/LandingPage/b4.png", // Update with the correct image URL
       rating: 4,
-      oldPrice: 150,
-      price: 140,
+      oldPrice: 699,
+      price: 499,
       funct: "/products/psoriasis-oil",
     },
     {
@@ -41,8 +41,8 @@ const TrendingProducts = ({
       name: "Psoriasis Capsule",
       image: "/LandingPage/b3.png", // Update with the correct image URL
       rating: 4,
-      oldPrice: 100,
-      price: 90,
+      oldPrice: 499,
+      price: 299,
       funct: "/products/psoriasis-capsule",
     },
   ];
@@ -72,7 +72,7 @@ const TrendingProducts = ({
             <SwiperSlide key={product.id}>
               <Link
                 to={product.funct}
-                className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
+                className=" rounded-2xl  p-6  transition"
               >
                 <img
                   src={product.image}

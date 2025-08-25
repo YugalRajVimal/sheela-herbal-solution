@@ -9,25 +9,25 @@ const reviews = [
     id: 1,
     name: "Ramesh Kumar",
     text: "I have been using Sheela Herbal Psoriasis Oil for 2 months and the itching has reduced a lot. My skin feels much calmer and healthier.",
-    image: "https://randomuser.me/api/portraits/men/32.jpg",
+    image: "/userImg1.jpeg",
   },
   {
     id: 2,
     name: "Pooja Sharma",
     text: "The Psoriasis Capsules have worked wonders for me. Within weeks, my patches started to fade and I feel more confident now.",
-    image: "https://randomuser.me/api/portraits/women/44.jpg",
+    image: "/userImg5.jpeg",
   },
   {
     id: 3,
     name: "Amit Verma",
     text: "I tried many products before, but Sheela Herbal’s oil gave real relief. It’s natural, effective, and has no side effects.",
-    image: "https://randomuser.me/api/portraits/men/36.jpg",
+    image: "/userImg2.jpeg",
   },
   {
     id: 4,
     name: "Neha Patel",
     text: "Very happy with the results. My skin irritation has gone down and I feel more comfortable in my daily life. Highly recommended!",
-    image: "https://randomuser.me/api/portraits/women/49.jpg",
+    image: "userImg4.jpeg",
   },
 ];
 

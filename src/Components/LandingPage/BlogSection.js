@@ -5,32 +5,32 @@ const blogs = [
   {
     id: 1,
     image: "/LandingPage/b2.png",
-    title: "Duis aute irure dolor in velit voluptate esse",
+    title: "Natural Ayurvedic Remedies for Psoriasis Relief",
     description:
-      "Ut turpis purus, pellentesque ac enim a, interdum euismod lectus. Aliquam sed finibus mi.",
-    date: "20 March, 2025",
-    likes: 900,
-    views: 830,
+      "Discover how Sheela Herbal’s Psoriasis Oil and Capsules provide safe, effective, and natural relief from itching, redness, and irritation.",
+    date: "15 February, 2025",
+    likes: 1200,
+    views: 2400,
   },
   {
     id: 2,
     image: "/LandingPage/b3.png",
-    title: "Fuis aute irure dolor in velit voluptate esse",
+    title: "Why Choose Herbal Care Over Chemical Treatments?",
     description:
-      "Kt turpis purus, pellentesque ac enim a, interdum euismod lectus. Aliquam sed finibus mi.",
-    date: "20 March, 2025",
-    likes: 900,
-    views: 830,
+      "Learn the benefits of Ayurveda and why herbal remedies are a safer alternative to chemical-based skincare products for long-term healing.",
+    date: "28 February, 2025",
+    likes: 980,
+    views: 2100,
   },
   {
     id: 3,
     image: "/LandingPage/b4.png",
-    title: "Duis aute irure dolor in velit voluptate esse",
+    title: "Boosting Skin Health with Ayurveda",
     description:
-      "Ut turpis purus, pellentesque ac enim a, interdum euismod lectus. Aliquam sed finibus mi.",
-    date: "20 March, 2025",
-    likes: 900,
-    views: 830,
+      "A closer look at how Ayurvedic herbs work together to restore balance, strengthen immunity, and improve overall skin health naturally.",
+    date: "10 March, 2025",
+    likes: 1350,
+    views: 2750,
   },
 ];
 
@@ -49,7 +49,7 @@ const BlogSection = () => {
       {/* Blog Layout */}
       <div className="grid grid-cols-1  lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
         {/* Left Big Blog Image */}
-        <div className="col-span-1 md:h-2/3  lg:col-span-2 relative group cursor-pointer">
+        <div className="col-span-1 md:h-2/3 lg:col-span-2 relative group cursor-pointer">
           <img
             src="/LandingPage/b1.jpg"
             alt="Main Blog"
@@ -59,14 +59,14 @@ const BlogSection = () => {
           <div className="absolute h-full w-full inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent rounded-2xl"></div>
           <div className="absolute bottom-4 text-right sm:bottom-6 right-4 sm:right-6 text-white">
             <h3 className="text-xl sm:text-2xl font-bold max-w-md sm:max-w-lg">
-              Main Blog Highlight Title Goes Here
+              Healing Psoriasis Naturally with Ayurveda
             </h3>
             <p className="text-xs sm:text-sm mt-2 text-gray-200 max-w-sm sm:max-w-md">
-              A short description of the main highlighted blog goes here,
-              catching attention.
+              Explore how Sheela Herbal’s Psoriasis Oil and Capsules help reduce
+              itching, dryness, and redness using natural Ayurvedic remedies.
             </p>
             <p className="mt-2 text-green-400 font-medium text-xs sm:text-sm">
-              20 March, 2025
+              05 March, 2025
             </p>
           </div>
         </div>
