@@ -12,7 +12,7 @@ const TopProducts = ({
       rating: 4,
       oldPrice: 150,
       newPrice: 140,
-      funct: handleToggleOilCardOpen,
+      funct: "/products/psoriasis-oil",
     },
     {
       name: "Psoriasis Capsule",
@@ -20,7 +20,7 @@ const TopProducts = ({
       rating: 4,
       oldPrice: 100,
       newPrice: 90,
-      funct: handleToggleCapsuleCardOpen,
+      funct: "/products/psoriasis-capsule",
     },
   ];
   return (
@@ -34,8 +34,8 @@ const TopProducts = ({
         {/* Products Grid */}
         <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
           {products.map((product, index) => (
-            <div
-              onClick={product.funct}
+            <a
+              href={product.funct}
               key={index}
               className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center"
             >
@@ -72,7 +72,7 @@ const TopProducts = ({
                   ${product.newPrice}
                 </span>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

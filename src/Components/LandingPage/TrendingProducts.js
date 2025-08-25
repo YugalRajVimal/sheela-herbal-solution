@@ -33,7 +33,7 @@ const TrendingProducts = ({
       rating: 4,
       oldPrice: 150,
       price: 140,
-      funct: handleToggleOilCardOpen,
+      funct: "/products/psoriasis-oil",
     },
     {
       id: 2,
@@ -42,7 +42,7 @@ const TrendingProducts = ({
       rating: 4,
       oldPrice: 100,
       price: 90,
-      funct: handleToggleCapsuleCardOpen,
+      funct: "/products/psoriasis-capsule",
     },
   ];
   return (
@@ -69,8 +69,8 @@ const TrendingProducts = ({
         >
           {products.map((product) => (
             <SwiperSlide key={product.id}>
-              <div
-                onClick={product.funct}
+              <a
+                href={product.funct}
                 className="bg-white rounded-2xl shadow-md p-6 hover:shadow-lg transition"
               >
                 <img
@@ -88,7 +88,7 @@ const TrendingProducts = ({
                     ${product.price}
                   </span>
                 </div>
-              </div>
+              </a>
             </SwiperSlide>
           ))}
         </Swiper>
