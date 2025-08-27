@@ -109,7 +109,7 @@ const About = () => {
                 <div className="relative overflow-hidden h-full">
                   <div className="relative  overflow-hidden">
                     <img
-                      src="/founder.jpeg"
+                      src="/sheelaHerbalCeo.jpeg"
                       alt=""
                       className=" h-1/2 aspect-[1/1] rounded-full object-cover transition-all duration-500"
                     />

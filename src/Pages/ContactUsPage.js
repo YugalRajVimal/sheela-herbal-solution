@@ -10,9 +10,9 @@ import Footer from "../Components/Footer";
 const Contact = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
-  const [countryCode, setCountryCode] = useState("India (+91)");
+  // const [countryCode, setCountryCode] = useState("India (+91)");
   const [phone, setPhone] = useState("");
-  const [company, setCompany] = useState("");
+  // const [company, setCompany] = useState("");
   const [message, setMessage] = useState("");
 
   const handleSubmit = async () => {
@@ -28,7 +28,7 @@ const Contact = () => {
     }
 
     const phoneNo = "+919389528675"; // Remove non-numeric characters
-    const fullMessage = `Hello, my name is ${fullName}. I am from ${company}. You can reach me at ${email} or ${countryCode} ${phone}. Message: ${message}`;
+    const fullMessage = `Hello, my name is ${fullName}. You can reach me at ${email} or ${phone}. Message: ${message}`;
     const whatsappUrl = `https://wa.me/${phoneNo}?text=${encodeURIComponent(
       fullMessage
     )}`;
@@ -99,34 +99,26 @@ const Contact = () => {
                       </div>
                     </div>
 
-                    <div className="grid md:grid-cols-[150px_1fr] gap-6">
-                      <div>
-                        <label className="block mb-2 font-semibold text-black">
-                          Phone Number
-                        </label>
-                        <select
-                          value={countryCode}
-                          onChange={(e) => setCountryCode(e.target.value)}
-                          className="w-full bg-white text-black border border-green-500 px-4 py-2 rounded-md focus:outline-none"
-                        >
-                          <option>India (+91)</option>
-                          <option>USA (+1)</option>
-                          <option>UK (+44)</option>
-                        </select>
-                      </div>
-                      <div className="pt-7 md:pt-[32px]">
+                    <div>
+                      <label className="block mb-2 font-semibold text-white">
+                        Phone Number
+                      </label>
+                      <div className="flex">
+                        <span className="inline-flex items-center px-4 py-2 rounded-l-md border border-green-500 border-r-0 bg-white text-black">
+                          +91
+                        </span>
                         <input
                           type="text"
                           placeholder="12345 67890"
                           required
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
-                          className="w-full text-black bg-white border border-green-500 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                          className="flex-1 text-black bg-white border border-green-500 px-4 py-2 rounded-r-md focus:outline-none focus:ring-2 focus:ring-green-500"
                         />
                       </div>
                     </div>
 
-                    <div>
+                    {/* <div>
                       <label className="block mb-2 font-semibold text-white">
                         Company Name
                       </label>
@@ -138,7 +130,7 @@ const Contact = () => {
                         onChange={(e) => setCompany(e.target.value)}
                         className="w-full text-black bg-white border border-green-500 px-4 py-2 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
                       />
-                    </div>
+                    </div> */}
 
                     <div>
                       <label className="block mb-2 font-semibold text-white">
