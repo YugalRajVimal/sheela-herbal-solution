@@ -11,16 +11,16 @@ const TopProducts = ({
       name: "Psoriasis Oil",
       image: "/LandingPage/b4.png", // Update with the correct image URL
       rating: 5,
-      oldPrice: 699,
-      newPrice: 499,
+      oldPrice: 999,
+      newPrice: 599,
       funct: "/products/psoriasis-oil",
     },
     {
       name: "Psoriasis Capsule",
       image: "/LandingPage/b3.png", // Update with the correct image URL
       rating: 5,
-      oldPrice: 499,
-      newPrice: 299,
+      oldPrice: 1999,
+      newPrice: 1599,
       funct: "/products/psoriasis-capsule",
     },
   ];

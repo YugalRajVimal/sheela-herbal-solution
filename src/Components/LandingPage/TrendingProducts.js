@@ -32,8 +32,8 @@ const TrendingProducts = ({
       name: "Psoriasis Oil",
       image: "/LandingPage/b4.png", // Update with the correct image URL
       rating: 4,
-      oldPrice: 699,
-      price: 499,
+      oldPrice: 999,
+      price: 599,
       funct: "/products/psoriasis-oil",
     },
     {
@@ -41,8 +41,8 @@ const TrendingProducts = ({
       name: "Psoriasis Capsule",
       image: "/LandingPage/b3.png", // Update with the correct image URL
       rating: 4,
-      oldPrice: 499,
-      price: 299,
+      oldPrice: 1999,
+      newPrice: 1599,
       funct: "/products/psoriasis-capsule",
     },
   ];

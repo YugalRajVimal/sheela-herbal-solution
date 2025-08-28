@@ -25,7 +25,7 @@ const CapsuleProduct = () => {
               Internal Ayurvedic Support for Skin Healing
             </p>
             <p className="text-lg font-semibold text-green-800 mt-2">
-              Price: ₹{299}
+              Price: ₹{1599}
             </p>
           </div>
           <div className="w-1/3 flex justify-end items-start">
