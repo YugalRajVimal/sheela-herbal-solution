@@ -9,18 +9,26 @@ const TopProducts = ({
   const products = [
     {
       name: "Psoriasis Oil",
-      image: "/LandingPage/b4.png", // Update with the correct image URL
+      image: "/oil.jpeg", // Update with the correct image URL
       rating: 5,
       oldPrice: 999,
-      newPrice: 599,
+      newPrice: 650,
       funct: "/products/psoriasis-oil",
     },
     {
       name: "Psoriasis Capsule",
-      image: "/LandingPage/b3.png", // Update with the correct image URL
+      image: "/cap.jpeg", // Update with the correct image URL
       rating: 5,
-      oldPrice: 1999,
-      newPrice: 1599,
+      oldPrice: 3500,
+      newPrice: 2299,
+      funct: "/products/psoriasis-capsule",
+    },
+    {
+      name: "Psoriasis Capsule",
+      image: "/cap2.jpeg", // Update with the correct image URL
+      rating: 5,
+      oldPrice: 3500,
+      newPrice: 2299,
       funct: "/products/psoriasis-capsule",
     },
   ];
@@ -33,18 +41,20 @@ const TopProducts = ({
         </h2>
 
         {/* Products Grid */}
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2">
+        <div className="grid gap-8 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3">
           {products.map((product, index) => (
             <Link
               to={product.funct}
               key={index}
-              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center text-center"
+              className="bg-white rounded-2xl shadow-md hover:shadow-xl transition p-6 flex flex-col items-center justify-between text-center"
             >
               <img
                 src={product.image}
                 alt={product.name}
-                className="w-32 h-32 object-contain mb-4"
+                className=" h-40 object-contain mb-4 rounded-md"
               />
+
+              <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-2">
                 {product.name}
               </h3>
@@ -73,6 +83,9 @@ const TopProducts = ({
                   ₹{product.newPrice}
                 </span>
               </div>
+
+              </div>
+         
             </Link>
           ))}
         </div>

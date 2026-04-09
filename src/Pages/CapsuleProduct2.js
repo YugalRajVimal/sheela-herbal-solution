@@ -2,10 +2,10 @@ import React from "react";
 import { CheckCircle, Leaf, Droplets, Shield } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const OilProduct = () => {
+const CapsuleProduct2 = () => {
   const sendWhatsAppMessage = () => {
-    const message = "I am interested in the Psoriasis Herbal Oil";
-    const phoneNumber = "+919389528675"; // Replace with the desired phone number
+    const message = "I'm interested in the Psoriasis Natural Capsule";
+    const phoneNumber = "+919389528675"; // Enter target number here
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
       message
     )}`;
@@ -14,28 +14,25 @@ const OilProduct = () => {
 
   return (
     <section className="h-screen w-screen fixed z-50 top-0 left-0 bg-black/70 py-20 px-4 md:px-12 lg:px-24 overflow-y-auto">
-      {/* Header */}
+      {/* Heading */}
       <div className="p-4 bg-white w-full rounded-md">
         <div className="flex w-full">
-          <div className="w-2/3 ">
+          <div className="w-2/3">
             <h1 className="text-3xl md:text-5xl text-left font-bold font-montserrat tracking-tight text-green-800">
-              Psoriasis Herbal Oil 🌿
+              Psoriasis Herbal Capsule 💊
             </h1>
             <p className="text-1xl md:text-3xl text-left font-bold font-montserrat tracking-tight text-green-800">
-              Enriched with Indian Jadibuti
+              Inner Ayurvedic Formula for Skin Wellness
             </p>
             <p className="text-lg font-semibold text-green-800 mt-2">
-              Price: ₹{599}
+              Cost: ₹{1599}
             </p>
           </div>
           <div className="w-1/3 flex justify-end items-start">
-            <Link
-              to="/"
-              className="text-gray-600 hover:text-gray-800 cursor-pointer"
-            >
+            <Link to="/" className="text-gray-600 hover:text-gray-800">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8" // Increased size for thickness
+                className="h-8 w-8"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -43,48 +40,47 @@ const OilProduct = () => {
                 <path
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  strokeWidth={3} // Increased stroke width for thickness
+                  strokeWidth={3}
                   d="M6 18L18 6M6 6l12 12"
-                  stroke="red" // Changed color to red
+                  stroke="red"
                 />
               </svg>
             </Link>
           </div>
         </div>
+
         <div className="text-center mb-12">
           <p className="text-gray-600 mt-4 max-w-3xl mx-auto font-roboto text-lg">
-            An Ayurvedic skin-soothing oil made with pure Indian herbs,
-            carefully blended to relieve psoriasis symptoms and restore natural
-            skin health.
+            An Ayurvedic capsule blend crafted with native Indian botanicals to cleanse from inside, regulate immune function, and help ongoing relief from psoriasis challenges.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start max-w-6xl mx-auto">
-          {/* Product Image */}
+          {/* Product Visual */}
           <div className="relative">
             <img
-              src="/oil.jpeg"
-              alt="Psoriasis Herbal Oil"
+              src="/cap2.jpeg"
+              alt="Psoriasis Herbal Capsule"
               className="w-full h-auto rounded-2xl shadow-lg border"
             />
             <div className="absolute -bottom-6 -right-6 bg-green-700 text-white px-6 py-3 rounded-xl shadow-md">
-              100% Herbal • Chemical-Free
+              Completely Herbal • Steroid-Free
             </div>
           </div>
 
-          {/* Product Content */}
+          {/* Product Info */}
           <div>
-            {/* Benefits */}
+            {/* Main Advantages */}
             <h2 className="text-2xl md:text-3xl font-semibold font-montserrat mb-4 text-green-800">
-              ✨ Key Benefits
+              ✨ Core Advantages
             </h2>
             <ul className="space-y-3 text-gray-700 mb-6">
               {[
-                "Relieves itching & irritation",
-                "Reduces scaling & redness",
-                "Hydrates & softens dry, flaky skin",
-                "Supports natural skin repair & regeneration",
-                "100% Herbal, Natural & Chemical-Free",
+                "Cleanses blood & eliminates toxins",
+                "Boosts immune responses & stabilizes Pitta",
+                "Decreases eruptions, flaking & redness",
+                "Promotes skin restoration from within",
+                "Pure Herbal, Secure & Not Habit-Forming",
               ].map((benefit, i) => (
                 <li key={i} className="flex items-center gap-2">
                   <CheckCircle className="text-green-600 w-5 h-5" />
@@ -93,86 +89,67 @@ const OilProduct = () => {
               ))}
             </ul>
 
-            {/* Ingredients */}
+            {/* Active Components */}
             <h2 className="text-2xl md:text-3xl font-semibold font-montserrat mb-4 text-green-800">
-              🍃 Ingredients (Natural Jadibuti Blend)
+              🍃 Composition (Potent Ayurvedic Mix)
             </h2>
             <ul className="list-disc pl-6 text-gray-700 space-y-2 mb-6">
               <li>
-                <span className="font-semibold">
-                  Neem (Azadirachta indica):
-                </span>{" "}
-                Purifies skin, reduces inflammation & infection
+                <span className="font-semibold">Neem:</span> Cleanses blood, diminishes skin swelling
               </li>
               <li>
-                <span className="font-semibold">
-                  Manjistha (Rubia cordifolia):
-                </span>{" "}
-                Improves skin texture, helps reduce redness
-              </li>
-              <li>
-                <span className="font-semibold">Tulsi (Holy Basil):</span>{" "}
-                Anti-bacterial, balances skin health
-              </li>
-              <li>
-                <span className="font-semibold">
-                  Karanj (Pongamia pinnata):
-                </span>{" "}
-                Traditional herb for skin disorders
+                <span className="font-semibold">Manjistha:</span> Detoxes, enhances skin radiance
               </li>
               <li>
                 <span className="font-semibold">Turmeric (Haldi):</span>{" "}
-                Anti-inflammatory & antioxidant properties
+                Soothes inflammation & provides antioxidants
               </li>
               <li>
-                <span className="font-semibold">Coconut Oil & Sesame Oil:</span>{" "}
-                Deep moisturization & nourishment
+                <span className="font-semibold">Guduchi (Giloy):</span> Improves immune function & balances body energies
               </li>
               <li>
-                <span className="font-semibold">Aloe Vera Extract:</span>{" "}
-                Soothes irritation & heals skin naturally
+                <span className="font-semibold">Haridra + Triphala:</span> Promotes digestion & boosts dermal strength
               </li>
             </ul>
 
-            {/* Usage */}
+            {/* Directions for Use */}
             <h2 className="text-2xl md:text-3xl font-semibold font-montserrat mb-4 text-green-800">
-              🌱 How to Use
+              🌱 Usage Instructions
             </h2>
             <p className="text-gray-700 mb-6">
-              Apply a few drops on the affected area, gently massage, and leave
-              overnight for best results. Use regularly for visible improvement.
+              Consume 1–2 capsules twice a day after food with warm water, or as advised by your healthcare expert. Maintain regular use for best outcomes.
             </p>
 
-            {/* Trust Badges */}
+            {/* Quality Certifications */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
               <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm text-center">
                 <Leaf className="text-green-600 w-8 h-8 mb-2" />
-                <p className="text-sm font-medium">100% Herbal</p>
+                <p className="text-sm font-medium">Pure Herbal</p>
               </div>
               <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm text-center">
                 <Droplets className="text-green-600 w-8 h-8 mb-2" />
-                <p className="text-sm font-medium">Chemical-Free</p>
+                <p className="text-sm font-medium">Zero Steroids</p>
               </div>
               <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm text-center">
                 <Shield className="text-green-600 w-8 h-8 mb-2" />
-                <p className="text-sm font-medium">Safe for Daily Use</p>
+                <p className="text-sm font-medium">Appropriate for Prolonged Use</p>
               </div>
               <div className="flex flex-col items-center bg-green-50 p-4 rounded-xl shadow-sm text-center">
                 <CheckCircle className="text-green-600 w-8 h-8 mb-2" />
-                <p className="text-sm font-medium">Ayurveda Certified</p>
+                <p className="text-sm font-medium">Approved Ayurveda</p>
               </div>
             </div>
 
-            {/* CTA */}
+            {/* Action Button */}
             <div className="text-center md:text-left">
               <button
                 onClick={sendWhatsAppMessage}
                 className="bg-green-700 hover:bg-green-800 text-white font-semibold px-8 py-4 rounded-xl shadow-lg transition duration-200"
               >
-                🛒 Buy Now – Heal Naturally
+                🛒 Order Now – Restore Organically
               </button>
               <p className="text-gray-500 text-sm mt-3">
-                ✨ 100% Herbal | No Steroids | No Chemicals | Safe for Daily Use
+                ✨ 100% Natural | No Steroids | Suitable for Daily Regimen | Non-Addictive
               </p>
             </div>
           </div>
@@ -182,4 +159,4 @@ const OilProduct = () => {
   );
 };
 
-export default OilProduct;
+export default CapsuleProduct2;

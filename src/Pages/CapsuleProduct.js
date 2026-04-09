@@ -61,7 +61,7 @@ const CapsuleProduct = () => {
           {/* Product Image */}
           <div className="relative">
             <img
-              src="/LandingPage/p3.jpg"
+              src="/cap.jpeg"
               alt="Psoriasis Herbal Capsule"
               className="w-full h-auto rounded-2xl shadow-lg border"
             />

@@ -6,6 +6,7 @@ import Contact from "./Pages/ContactUsPage";
 import About from "./Pages/AboutUsPage";
 import OilProduct from "./Pages/OilProduct";
 import CapsuleProduct from "./Pages/CapsuleProduct";
+import CapsuleProduct2 from "./Pages/CapsuleProduct2";
 
 const App = () => {
   return (
@@ -19,6 +20,10 @@ const App = () => {
           <Route
             path="products/psoriasis-capsule"
             element={<CapsuleProduct />}
+          />
+            <Route
+            path="products/psoriasis-capsule"
+            element={<CapsuleProduct2 />}
           />
         </Route>
       </Routes>

@@ -28,22 +28,28 @@ const TrendingProducts = ({
 }) => {
   const products = [
     {
-      id: 1,
       name: "Psoriasis Oil",
-      image: "/LandingPage/b4.png", // Update with the correct image URL
-      rating: 4,
+      image: "/oil.jpeg", // Update with the correct image URL
+      rating: 5,
       oldPrice: 999,
-      price: 599,
+      newPrice: 650,
       funct: "/products/psoriasis-oil",
     },
     {
-      id: 2,
       name: "Psoriasis Capsule",
-      image: "/LandingPage/b3.png", // Update with the correct image URL
-      rating: 4,
-      oldPrice: 1999,
-      newPrice: 1599,
+      image: "/cap.jpeg", // Update with the correct image URL
+      rating: 5,
+      oldPrice: 3500,
+      newPrice: 2299,
       funct: "/products/psoriasis-capsule",
+    },
+    {
+      name: "Psoriasis Capsule",
+      image: "/cap2.jpeg", // Update with the correct image URL
+      rating: 5,
+      oldPrice: 3500,
+      newPrice: 2299,
+      funct: "/products/psoriasis-capsule-2",
     },
   ];
   return (
@@ -64,7 +70,7 @@ const TrendingProducts = ({
           spaceBetween={30}
           breakpoints={{
             320: { slidesPerView: 1 },
-            640: { slidesPerView: 2 },
+            640: { slidesPerView: 3 },
           }}
           className="pb-10"
         >
@@ -72,12 +78,12 @@ const TrendingProducts = ({
             <SwiperSlide key={product.id}>
               <Link
                 to={product.funct}
-                className=" rounded-2xl  p-6  transition"
+                className=" rounded-2xl p-6 transition"
               >
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-40 h-40 mx-auto object-contain mb-6"
+                  className="h-44  mx-auto object-contain mb-6 rounded-xl"
                 />
                 <h3 className="text-lg font-semibold">{product.name}</h3>
                 <StarRating rating={product.rating} />
@@ -86,7 +92,7 @@ const TrendingProducts = ({
                     ₹{product.oldPrice}
                   </span>
                   <span className="text-green-600 font-semibold">
-                    ₹{product.price}
+                    ₹{product.newPrice}
                   </span>
                 </div>
               </Link>
