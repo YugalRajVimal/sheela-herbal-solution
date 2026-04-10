@@ -12,6 +12,7 @@ import BlogSection from "../Components/LandingPage/BlogSection";
 import PsoriasisHerbalOilCard from "../Components/PsoriasisHerbalOilCard";
 import PsoriasisHerbalCapsuleCard from "../Components/PsoriasisHerbalCapsuleCard";
 import Footer from "../Components/Footer";
+import Doctors from "../Components/Doctors";
 
 const LandingPage = () => {
   const [isOilCardOpen, setIsOilCarOpen] = useState(false);
@@ -67,6 +68,7 @@ const LandingPage = () => {
           handleToggleOilCardOpen={handleToggleOilCardOpen}
           handleToggleCapsuleCardOpen={handleToggleCapsuleCardOpen}
         />
+        <Doctors />
         <BlogSection />
         <PsoriasisHerbalOilCard
           isOilCardOpen={isOilCardOpen}
